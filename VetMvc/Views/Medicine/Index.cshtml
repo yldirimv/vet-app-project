@@ -1,0 +1,101 @@
+﻿@model IEnumerable<VetMvc.Models.MedicineModel>
+@{
+    ViewData["Title"] = "İlaçlar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-pills"></i> İlaçlar</h1>
+        <p>Kayıtlı tüm ilaçlar</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-pills"></i>
+    </div>
+</div>
+
+<div class="page-header">
+    <div class="search-bar">
+        <form method="get" action="/Medicine/SearchByName" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="İlaç adına göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Medicine/SearchByType" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="İlaç türüne göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+    </div>
+    <a href="/Medicine/EditCreate" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> İlaç Ekle
+    </a>
+</div>
+
+<div class="card">
+    @if (Model != null && Model.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>İlaç Adı</th>
+                    <th>Türü</th>
+                    <th>Kullanım Açıklaması</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    string medicineIcon = item.MedicineType switch
+                    {
+                        "Krem" => "/images/cream.png",
+                        "Damla" => "/images/drop.png",
+                        "Enjeksiyon" => "/images/injection.png",
+                        "Şaşe" => "/images/sachet.png",
+                        "Hap" => "/images/medicine.png",
+                        "Jel" => "/images/cream.png",
+                        "Efervesan Tablet" => "/images/medicine.png",
+                        "Sprey" => "/images/drop.png",
+                        _ => "/images/medicine.png"
+                    };
+                    <tr>
+                        <td><span class="badge">@item.MedicineId</span></td>
+                        <td>
+                            <img src="@medicineIcon" style="width:20px; height:20px; object-fit:contain; margin-right:0.4rem; vertical-align:middle;" />
+                            @item.MedName
+                        </td>
+                        <td>@item.MedicineType</td>
+                        <td>@item.UsageDescription</td>
+                        <td>
+                            <div class="actions">
+                                <a href="/Medicine/EditCreate/@item.MedicineId" name="btn btn-edit">
+                                    <i class="fa-solid fa-pen"></i> Düzenle
+                                </a>
+                                <a href="/Medicine/Delete/@item.MedicineId" class="btn btn-delete">
+                                    <i class="fa-solid fa-trash"></i> Sil
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="empty">
+            <div class="icon"><i class="fa-solid fa-pills"></i></div>
+            Henüz ilaç eklenmemiş. <a href="/Medicine/EditCreate">İlk ilacı ekle →</a>
+        </div>
+    }
+</div>

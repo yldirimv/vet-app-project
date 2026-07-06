@@ -1,0 +1,102 @@
+﻿@model IEnumerable<VetMvc.Models.PetModel>
+@{
+    ViewData["Title"] = "Hastalar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-paw"></i> Hastalar</h1>
+        <p>Kayıtlı tüm hayvan hastalar</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-paw"></i>
+    </div>
+</div>
+
+<div class="page-header">
+    <div class="search-bar">
+        <form method="get" action="/Pet/SearchByName" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Ada göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Pet/SearchByType" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Türe göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+    </div>
+    <a href="/Pet/EditCreate" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> Hasta Ekle
+    </a>
+</div>
+
+<div class="card">
+    @if (Model != null && Model.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Adı</th>
+                    <th>Tür</th>
+                    <th>Yaş</th>
+                    <th>Adres</th>
+                    <th>Sahip Telefonu</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    string petIcon = item.PetType switch
+                    {
+                        "Kedi" => "/images/paw.png",
+                        "Köpek" => "/images/paw.png",
+                        "Kuş" => "/images/bird.png",
+                        "Tavuk" => "/images/chicken.png",
+                        "Hamster" => "/images/mouse.png",
+                        _ => "/images/paw.png"
+                    };
+                    <tr>
+                        <td><span class="badge">@item.PetId</span></td>
+                        <td>
+                            <img src="@petIcon" style="width:20px; height:20px; object-fit:contain; margin-right:0.4rem; vertical-align:middle;" />
+                            @item.PetName
+                        </td>
+                        <td>@item.PetType</td>
+                        <td>@item.Age</td>
+                        <td>@item.Address</td>
+                        <td>@item.OwnerPhone</td>
+                        <td>
+                            <div class="actions">
+                                <a href="/Pet/EditCreate/@item.PetId" class="btn btn-edit">
+                                    <i class="fa-solid fa-pen"></i> Düzenle
+                                </a>
+                                <a href="/Pet/Delete/@item.PetId" class="btn btn-delete">
+                                    <i class="fa-solid fa-trash"></i> Sil
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="empty">
+            <div class="icon"><i class="fa-solid fa-paw"></i></div>
+            Henüz hasta eklenmemiş. <a href="/Pet/EditCreate">İlk hastayı ekle →</a>
+        </div>
+    }
+</div>

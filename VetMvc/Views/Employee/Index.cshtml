@@ -1,0 +1,94 @@
+﻿@model IEnumerable<VetMvc.Models.EmployeeModel>
+@{
+    ViewData["Title"] = "Çalışanlar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-user-doctor"></i> Çalışanlar</h1>
+        <p>Kayıtlı tüm veteriner ve admin çalışanlar</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-user-doctor"></i>
+    </div>
+</div>
+
+<div class="page-header">
+    <div class="search-bar">
+        <form method="get" action="/Employee/SearchByName" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Ada göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Employee/SearchByBranch" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Branşa göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+    </div>
+    <a href="/Employee/EditCreate" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> Çalışan Ekle
+    </a>
+</div>
+
+<div class="card">
+    @if (Model != null && Model.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ad Soyad</th>
+                    <th>E-Posta</th>
+                    <th>Branş</th>
+                    <th>Telefon</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    string branchIcon = item.Branch == "Admin"
+                    ? "/images/setting.png"
+                    : "/images/stethoscope.png";
+                    <tr>
+                        <td><span class="badge">@item.EmployeeId</span></td>
+                        <td>@item.NameSurname</td>
+                        <td>@item.Email</td>
+                        <td>
+                            <img src="@branchIcon" style="width:20px; height:20px; object-fit:contain; margin-right:0.4rem; vertical-align:middle;" />
+                            @item.Branch
+                        </td>
+                        <td>@item.PhoneNumber</td>
+                        <td>
+                            <div class="actions">
+                                <a href="/Employee/EditCreate/@item.EmployeeId" class="btn btn-edit">
+                                    <i class="fa-solid fa-pen"></i> Düzenle
+                                </a>
+                                <a href="/Employee/Delete/@item.EmployeeId" class="btn btn-delete">
+                                    <i class="fa-solid fa-trash"></i> Sil
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="empty">
+            <div class="icon"><i class="fa-solid fa-user-doctor"></i></div>
+            Henüz çalışan eklenmemiş. <a href="/Employee/EditCreate">İlk çalışanı ekle →</a>
+        </div>
+    }
+</div>

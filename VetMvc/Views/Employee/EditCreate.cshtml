@@ -1,0 +1,50 @@
+﻿@model VetMvc.Models.EmployeeModel
+@{
+    bool isEdit = Model != null && Model.EmployeeId != 0;
+    ViewData["Title"] = isEdit ? "Çalışan Düzenle" : "Çalışan Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-user-doctor"></i> @(isEdit ? "Çalışan Düzenle" : "Yeni Çalışan Ekle")</h1>
+        <p>@(isEdit? Model.NameSurname: "Yeni kayıt oluştur")</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-user-doctor"></i>
+    </div>
+</div>
+
+<div class="form-card">
+    <form method="post" action="/Employee/EditCreate">
+        <input type="hidden" name="EmployeeId" value="@(isEdit? Model.EmployeeId: 0)" />
+
+        <div class="form-group">
+            <label>Ad Soyad</label>
+            <input type="text" name="NameSurname" value="@Model?.NameSurname" placeholder="Dr. Ayşe Kaya" />
+        </div>
+        <div class="form-group">
+            <label>E-Posta</label>
+            <input type="email" name="Email" value="@Model?.Email" placeholder="ornek@email.com" />
+        </div>
+        <div class="form-group">
+            <label>Şifre</label>
+            <input type="password" name="Password" value="@Model?.Password" placeholder="••••••••" />
+        </div>
+        <div class="form-group">
+            <label>Branş</label>
+            <input type="text" name="Branch" value="@Model?.Branch" placeholder="Kardiyoloji, Admin..." />
+        </div>
+        <div class="form-group">
+            <label>Telefon</label>
+            <input type="text" name="PhoneNumber" value="@Model?.PhoneNumber" placeholder="0532 000 00 00" />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-save">
+                <i class="fa-solid fa-floppy-disk"></i> Kaydet
+            </button>
+            <a href="/Employee" class="btn btn-cancel">İptal</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,208 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .dashboard-banner {
+        background: linear-gradient(135deg, #1A3C6E 0%, #2456A4 100%);
+        border-radius: 14px;
+        padding: 2rem 2.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+        .dashboard-banner h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .dashboard-banner p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.3rem;
+        }
+
+    .banner-icon {
+        font-size: 3.5rem;
+        opacity: 0.3;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #DDE3ED;
+        box-shadow: 0 1px 4px rgba(26,60,110,0.06);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        flex-shrink: 0;
+    }
+
+        .stat-icon.blue {
+            background: #EAF0FB;
+            color: #2456A4;
+        }
+
+        .stat-icon.red {
+            background: #FDECEA;
+            color: #C0392B;
+        }
+
+        .stat-icon.green {
+            background: #E8F8F0;
+            color: #1E8449;
+        }
+
+        .stat-icon.orange {
+            background: #FEF5E7;
+            color: #D35400;
+        }
+
+    .stat-info h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        line-height: 1;
+    }
+
+    .stat-info p {
+        font-size: 0.82rem;
+        color: #5a6480;
+        margin-top: 0.3rem;
+    }
+
+    .chart-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #DDE3ED;
+        box-shadow: 0 1px 4px rgba(26,60,110,0.06);
+    }
+
+        .chart-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1A3C6E;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="dashboard-banner">
+    <div>
+        <h2>Hoş Geldiniz 👋</h2>
+        <p>Pati Veteriner Yönetim Paneli — @DateTime.Now.ToString("dd MMMM yyyy")</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-paw"></i>
+    </div>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-icon blue">
+            <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <div class="stat-info">
+            <h3>@ViewBag.TotalEmployees</h3>
+            <p>Toplam Çalışan</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon red">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+        <div class="stat-info">
+            <h3>@ViewBag.TotalPets</h3>
+            <p>Toplam Hasta</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon green">
+            <i class="fa-solid fa-pills"></i>
+        </div>
+        <div class="stat-info">
+            <h3>@ViewBag.TotalMedicines</h3>
+            <p>Toplam İlaç</p>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon orange">
+            <i class="fa-solid fa-stethoscope"></i>
+        </div>
+        <div class="stat-info">
+            <h3>@ViewBag.TotalTreatments</h3>
+            <p>Toplam Tedavi</p>
+        </div>
+    </div>
+</div>
+
+<div class="chart-card">
+    <h3><i class="fa-solid fa-chart-bar"></i> Aylara Göre Tedavi Sayısı</h3>
+    <canvas id="treatmentChart" height="80"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+        var data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.TreatmentsByMonth));
+
+    var labels = data.map(d => {
+        var months = ["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];
+        return months[(d.Month ?? d.month) - 1] + " " + (d.Year ?? d.year);
+    });
+
+    var values = data.map(d => d.Total ?? d.total);
+
+    new Chart(document.getElementById("treatmentChart"), {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Tedavi Sayısı",
+                data: values,
+                backgroundColor: "rgba(36, 86, 164, 0.75)",
+                borderColor: "#1A3C6E",
+                borderWidth: 1,
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: { stepSize: 1 }
+                }
+            }
+        }
+    });
+</script>

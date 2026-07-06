@@ -1,0 +1,108 @@
+﻿@model IEnumerable<VetMvc.Models.TreatmentModel>
+@{
+    ViewData["Title"] = "Tedaviler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-stethoscope"></i> Tedaviler</h1>
+        <p>Kayıtlı tüm tedavi kayıtları</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-stethoscope"></i>
+    </div>
+</div>
+
+<div class="page-header">
+    <div class="search-bar">
+        <form method="get" action="/Treatment/SearchByPetName" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Hayvan adına göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Treatment/SearchByPetType" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Hayvan türüne göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Treatment/SearchByDoctorName" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="keyword" placeholder="Doktor adına göre ara..." />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+        <form method="get" action="/Treatment/SearchByDate" style="display:flex; gap:0.5rem">
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="date" name="date" />
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i> Ara
+            </button>
+        </form>
+    </div>
+    <a href="/Treatment/EditCreate" class="btn btn-primary">
+        <i class="fa-solid fa-plus"></i> Tedavi Ekle
+    </a>
+</div>
+
+<div class="card">
+    @if (Model != null && Model.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tedavi Adı</th>
+                    <th>Tarih</th>
+                    <th>Hasta</th>
+                    <th>Doktor</th>
+                    <th>İlaç</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><span class="badge">@item.TreatmentId</span></td>
+                        <td>@item.TreatmentName</td>
+                        <td>@item.TreatmentDate?.ToString("dd.MM.yyyy")</td>
+                        <td>@item.Pet?.PetName</td>
+                        <td>@item.Employee?.NameSurname</td>
+                        <td>@item.Medicine?.MedName</td>
+                        <td>
+                            <div class="actions">
+                                <a href="/Treatment/EditCreate/@item.TreatmentId" class="btn btn-edit">
+                                    <i class="fa-solid fa-pen"></i> Düzenle
+                                </a>
+                                <a href="/Treatment/Delete/@item.TreatmentId" class="btn btn-delete">
+                                    <i class="fa-solid fa-trash"></i> Sil
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="empty">
+            <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+            Henüz tedavi kaydı eklenmemiş. <a href="/Treatment/EditCreate">İlk tedaviyi ekle →</a>
+        </div>
+    }
+</div>

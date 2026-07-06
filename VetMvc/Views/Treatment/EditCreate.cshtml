@@ -1,0 +1,91 @@
+﻿@model VetMvc.Models.TreatmentModel
+@{
+    bool isEdit = Model != null && Model.TreatmentId != 0;
+    ViewData["Title"] = isEdit ? "Tedavi Düzenle" : "Tedavi Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var pets = ViewBag.Pets as IEnumerable<VetMvc.Models.PetModel>;
+    var employees = ViewBag.Employees as IEnumerable<VetMvc.Models.EmployeeModel>;
+    var medicines = ViewBag.Medicines as IEnumerable<VetMvc.Models.MedicineModel>;
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-stethoscope"></i> @(isEdit ? "Tedavi Düzenle" : "Yeni Tedavi Ekle")</h1>
+        <p>@(isEdit? Model.TreatmentName: "Yeni kayıt oluştur")</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-stethoscope"></i>
+    </div>
+</div>
+
+<div class="form-card">
+    <form method="post" action="/Treatment/EditCreate">
+        <input type="hidden" name="TreatmentId" value="@(isEdit? Model.TreatmentId: 0)" />
+
+        <div class="form-group">
+            <label>Tedavi Adı</label>
+            <input type="text" name="TreatmentName" value="@Model?.TreatmentName" placeholder="Genel Muayene, Aşı..." />
+        </div>
+
+        <div class="form-group">
+            <label>Tedavi Tarihi</label>
+            <input type="date" name="TreatmentDate" value="@Model?.TreatmentDate?.ToString("yyyy-MM-dd")" />
+        </div>
+
+        <div class="form-group">
+            <label>Hasta</label>
+            <select name="PetId">
+                <option value="">-- Hasta Seçin --</option>
+                @if (pets != null)
+                {
+                    @foreach (var pet in pets)
+                    {
+                        <option value="@pet.PetId" selected="@(isEdit && Model.PetId == pet.PetId ? "selected" : null)">
+                            @pet.PetName (@pet.PetType)
+                        </option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Doktor</label>
+            <select name="EmployeeId">
+                <option value="">-- Doktor Seçin --</option>
+                @if (employees != null)
+                {
+                    @foreach (var employee in employees)
+                    {
+                        <option value="@employee.EmployeeId" selected="@(isEdit && Model.EmployeeId == employee.EmployeeId ? "selected" : null)">
+                            @employee.NameSurname - @employee.Branch
+                        </option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>İlaç</label>
+            <select name="MedicineId">
+                <option value="">-- İlaç Seçin --</option>
+                @if (medicines != null)
+                {
+                    @foreach (var medicine in medicines)
+                    {
+                        <option value="@medicine.MedicineId" selected="@(isEdit && Model.MedicineId == medicine.MedicineId ? "selected" : null)">
+                            @medicine.MedName (@medicine.MedicineType)
+                        </option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-save">
+                <i class="fa-solid fa-floppy-disk"></i> Kaydet
+            </button>
+            <a href="/Treatment" class="btn btn-cancel">İptal</a>
+        </div>
+    </form>
+</div>

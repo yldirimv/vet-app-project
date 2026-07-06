@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\medicine\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\medicine\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\pet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\pet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\treatment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\treatment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\vetmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:vetmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\medicinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\medicinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\treatmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\treatmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\treatment\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\treatment\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\medicine\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\medicine\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\pet\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\pet\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\employee\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\employee\\editcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\views\\employee\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:views\\employee\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\models\\petmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:models\\petmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\models\\medicinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:models\\medicinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|c:\\users\\merve\\desktop\\vetapimvcproject\\vetmvc\\models\\treatmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E811BB3C-455D-4D89-82D9-A1DBBF028AFB}|VetMvc.csproj|solutionrelative:models\\treatmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T11:37:40.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Treatment\\EditCreate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Treatment\\EditCreate.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Treatment\\EditCreate.cshtml",
+              "RelativeToolTip": "Views\\Treatment\\EditCreate.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwFoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:11:12.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Treatment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Treatment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Treatment\\Index.cshtml",
+              "RelativeToolTip": "Views\\Treatment\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwGsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:10:50.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Medicine\\EditCreate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Medicine\\EditCreate.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Medicine\\EditCreate.cshtml",
+              "RelativeToolTip": "Views\\Medicine\\EditCreate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:09:56.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Medicine\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Medicine\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Medicine\\Index.cshtml",
+              "RelativeToolTip": "Views\\Medicine\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwFkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:09:32.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Pet\\EditCreate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pet\\EditCreate.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Pet\\EditCreate.cshtml",
+              "RelativeToolTip": "Views\\Pet\\EditCreate.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwDkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:05:13.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Pet\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pet\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Pet\\Index.cshtml",
+              "RelativeToolTip": "Views\\Pet\\Index.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwFoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T11:04:53.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T10:55:12.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EditCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\EditCreate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\EditCreate.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\EditCreate.cshtml",
+              "RelativeToolTip": "Views\\Employee\\EditCreate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T10:54:59.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHoBAAAAAAAAAAAAAI0BAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T10:49:38.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAALMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T10:48:48.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T10:46:21.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Views\\Employee\\Login.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Login.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-26T10:41:23.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-26T09:13:04.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T09:12:55.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:30:35.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TreatmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\TreatmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TreatmentController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\TreatmentController.cs",
+              "RelativeToolTip": "Controllers\\TreatmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:53:35.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MedicineController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\MedicineController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MedicineController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\MedicineController.cs",
+              "RelativeToolTip": "Controllers\\MedicineController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:50:16.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PetController.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\PetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PetController.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Controllers\\PetController.cs",
+              "RelativeToolTip": "Controllers\\PetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:41:21.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:25:59.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VetMvc.csproj",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\VetMvc.csproj",
+              "RelativeDocumentMoniker": "VetMvc.csproj",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\VetMvc.csproj",
+              "RelativeToolTip": "VetMvc.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-26T08:22:17.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:20:43.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TreatmentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\TreatmentModel.cs",
+              "RelativeDocumentMoniker": "Models\\TreatmentModel.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\TreatmentModel.cs",
+              "RelativeToolTip": "Models\\TreatmentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:12:46.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MedicineModel.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\MedicineModel.cs",
+              "RelativeDocumentMoniker": "Models\\MedicineModel.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\MedicineModel.cs",
+              "RelativeToolTip": "Models\\MedicineModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:12:34.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PetModel.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\PetModel.cs",
+              "RelativeDocumentMoniker": "Models\\PetModel.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\PetModel.cs",
+              "RelativeToolTip": "Models\\PetModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:12:18.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmployeeModel.cs",
+              "DocumentMoniker": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\EmployeeModel.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeModel.cs",
+              "ToolTip": "C:\\Users\\Merve\\Desktop\\VetApiMvcProject\\VetMvc\\Models\\EmployeeModel.cs",
+              "RelativeToolTip": "Models\\EmployeeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T08:12:10.494Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

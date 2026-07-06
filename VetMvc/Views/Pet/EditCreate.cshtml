@@ -1,0 +1,58 @@
+﻿@model VetMvc.Models.PetModel
+@{
+    bool isEdit = Model != null && Model.PetId != 0;
+    ViewData["Title"] = isEdit ? "Hasta Düzenle" : "Hasta Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-banner">
+    <div>
+        <h1><i class="fa-solid fa-paw"></i> @(isEdit ? "Hasta Düzenle" : "Yeni Hasta Ekle")</h1>
+        <p>@(isEdit? Model.PetName: "Yeni kayıt oluştur")</p>
+    </div>
+    <div class="banner-icon">
+        <i class="fa-solid fa-paw"></i>
+    </div>
+</div>
+
+<div class="form-card">
+    <form method="post" action="/Pet/EditCreate">
+        <input type="hidden" name="PetId" value="@(isEdit? Model.PetId: 0)" />
+
+        <div class="form-group">
+            <label>Hayvan Adı</label>
+            <input type="text" name="PetName" value="@Model?.PetName" placeholder="Karabaş, Tekir..." />
+        </div>
+        <div class="form-group">
+            <label>Tür</label>
+            <select name="PetType">
+                <option value="">-- Tür Seçin --</option>
+                @foreach (var type in new[] { "Kedi", "Köpek", "Kuş", "Tavuk", "Hamster" })
+                {
+                    <option value="@type" selected="@(isEdit && Model.PetType == type ? "selected" : null)">
+                        @type
+                    </option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Yaş</label>
+            <input type="number" name="Age" value="@Model?.Age" placeholder="3" />
+        </div>
+        <div class="form-group">
+            <label>Adres</label>
+            <input type="text" name="Address" value="@Model?.Address" placeholder="İstanbul, Kadıköy..." />
+        </div>
+        <div class="form-group">
+            <label>Sahip Telefonu</label>
+            <input type="text" name="OwnerPhone" value="@Model?.OwnerPhone" placeholder="0532 000 00 00" />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-save">
+                <i class="fa-solid fa-floppy-disk"></i> Kaydet
+            </button>
+            <a href="/Pet" class="btn btn-cancel">İptal</a>
+        </div>
+    </form>
+</div>

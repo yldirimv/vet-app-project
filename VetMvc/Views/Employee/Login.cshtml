@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Giriş";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pati Veteriner - Giriş</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            background-image: url('/images/loginbackground.png');
+            background-size: cover;
+            background-position: right center;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            background: rgba(10, 30, 60, 0.45);
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 16px;
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 400px;
+            margin-left: 6%;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+
+        .login-brand {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-brand .paw {
+            font-size: 2.5rem;
+            color: #C0392B;
+        }
+
+        .login-brand h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1A3C6E;
+            margin-top: 0.5rem;
+        }
+
+        .login-brand h1 em {
+            color: #C0392B;
+            font-style: normal;
+        }
+
+        .login-brand p {
+            font-size: 0.85rem;
+            color: #5a6480;
+            margin-top: 0.3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #5a6480;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .input-wrap {
+            position: relative;
+        }
+
+        .input-wrap i {
+            position: absolute;
+            left: 0.85rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #5a6480;
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.65rem 0.85rem 0.65rem 2.4rem;
+            border: 1.5px solid #DDE3ED;
+            border-radius: 8px;
+            font-size: 0.93rem;
+            color: #1a1a2e;
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .form-group input:focus {
+            border-color: #2456A4;
+        }
+
+        .error-msg {
+            background: #FDECEA;
+            color: #C0392B;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 0.75rem;
+            background: #1A3C6E;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s;
+            margin-top: 0.5rem;
+        }
+
+        .btn-login:hover {
+            background: #2456A4;
+        }
+
+        .login-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #5a6480;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="login-card">
+            <div class="login-brand">
+                <div class="paw"><i class="fa-solid fa-paw"></i></div>
+                <h1>Pati <em>Veteriner</em></h1>
+                <p>Yönetim Paneli</p>
+            </div>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="error-msg">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    @ViewBag.Error
+                </div>
+            }
+
+            <form method="post" action="/Employee/Login">
+                <div class="form-group">
+                    <label>E-Posta</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="Email" placeholder="ornek@email.com" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="Password" placeholder="••••••••" />
+                    </div>
+                </div>
+                <button type="submit" class="btn-login">
+                    <i class="fa-solid fa-right-to-bracket"></i> Giriş Yap
+                </button>
+            </form>
+
+            <div class="login-footer">
+                Pati Veteriner © 2026
+            </div>
+        </div>
+    </div>
+</body>
+</html>
