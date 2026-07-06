@@ -21,9 +21,9 @@ ASP.NET Core tabanlı veteriner klinik yönetim sistemi.
 
 ## Ekran Görüntüleri
 
-![Giriş](../VetMvc/screenshots/login-page.png)
-![Dashboard](../VetMvc/screenshots/dashboard.png)
-![Tedavi Ekleme](../VetMvc/screenshots/create-treatment-in-doctor-page.png)
+![Giriş](VetMvc/screenshots/login-page.png)
+![Dashboard](VetMvc/screenshots/dashboard.png)
+![Tedavi Ekleme](VetMvc/screenshots/create-treatment-in-doctor-page.png)
 
 ## Kurulum
 
